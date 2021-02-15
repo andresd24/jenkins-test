@@ -1,0 +1,10 @@
+<div class="col-lg-12" [@fadeIn]>
+
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit()" class="col-lg-10" autocomplete="false">
+        <input id="buttonDelay" type="submit" value="Display text after 20 seconds of clicking" class="btn btn-success" />
+        <div id="textDelay" class="alert alert-success" *ngIf="isDislayButtonText">
+            This text was shown after 20 seconds of clicking the above button
+        </div>
+    </form>
+
+</div>
